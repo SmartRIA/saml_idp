@@ -84,12 +84,12 @@ module SamlIdp
         session_expiry,
         name_id_formats_opts,
         asserted_attributes_opts,
-        x509_certificate_opts,
-        secret_key_opts,
-        password_opts,
         signed_message_opts,
         signed_assertion_opts,
-        compress_opts
+        compress_opts,
+        x509_certificate_opts,
+        secret_key_opts,
+        password_opts
       ).build
     end
 

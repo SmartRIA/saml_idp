@@ -40,12 +40,12 @@ module SamlIdp
       session_expiry = 0,
       name_id_formats_opts = nil,
       asserted_attributes_opts = nil,
-      x509_certificate_opts = nil,
-      secret_key_opts = nil,
-      password_opts = nil,
       signed_message_opts = false,
       signed_assertion_opts = true,
-      compression_opts = false
+      compression_opts = false,
+      x509_certificate_opts = nil,
+      secret_key_opts = nil,
+      password_opts = nil
     )
 
       self.reference_id = reference_id
@@ -64,13 +64,13 @@ module SamlIdp
       self.signed_message_opts = signed_message_opts
       self.name_id_formats_opts = name_id_formats_opts
       self.asserted_attributes_opts = asserted_attributes_opts
-      self.x509_certificate = x509_certificate_opts
-      self.secret_key = secret_key_opts
-      self.password = password_opts
       self.signed_assertion_opts = signed_assertion_opts
       self.name_id_formats_opts = name_id_formats_opts
       self.asserted_attributes_opts = asserted_attributes_opts
       self.compression_opts = compression_opts
+      self.x509_certificate = x509_certificate_opts
+      self.secret_key = secret_key_opts
+      self.password = password_opts
     end
 
     def build
